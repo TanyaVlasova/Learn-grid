@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!--  
+        Первый пример - свойства грид-контейнера (создание сетки, отступы)
+        -- grid-template-columns, grid-template-rows
+        -- gap (row-gap, column-gap)
+        -- grid-auto-flow
+        -- grid-auto-columns, grid-auto-rows
+      -->
+    <div class="title">Базовые свойства контейнера</div>
+    <div class="grid grid1">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <!--
+        Второй пример - свойства грид-контейнера (создание 
+        шаблона сетки расположения элементов внутри грид-контейнера)
+        -- grid-template-areas
+        -- grid-area (для грид-элемента)
+      -->
+    <div class="title">Шаблон сетки</div>
+    <div class="grid grid2">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <!--
+        Третий пример - свойства грид-контейнера (выравнивание)
+        -- justify-content
+        -- justify-items
+        -- align-content
+        -- align-items
+      -->
+    <div class="title">Выравнивание</div>
+    <div class="grid grid3">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
