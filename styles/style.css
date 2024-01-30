@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Yandex";
+  src: url("./YandexSansDisplay-Thin.ttf");
+}
+
+body {
+  margin: 50px 20px;
+  background-color: #f6f7f1;
+  font-family: Yandex;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.grid {
+  width: 100%;
+  margin-bottom: 500px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+/* css counter 1 */
+
+body {
+  counter-reset: title-counter 0;
+}
+
+.title {
+  counter-increment: title-counter 1;
+}
+
+.title::before {
+  content: counter(title-counter) ". ";
+}
+
+/* css counter 2 */
+
+.grid {
+  counter-reset: items-counter 0;
+}
+
+.grid > div {
+  counter-increment: items-counter 1;
+}
+
+.grid > div::before {
+  content: counter(items-counter);
+}

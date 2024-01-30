@@ -1,0 +1,28 @@
+.grid-2 {
+  display: grid;
+  height: 500px;
+  gap: 20px;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+
+  justify-items: center;
+}
+
+.grid-2 :nth-child(1) {
+  justify-self: start;
+  align-self: center;
+}
+
+/* 
+  justify-content
+  align-content
+  place-content
+
+  justify-items
+  align-items
+  place-items
+
+  justify-self
+  align-self
+  place-self
+*/

@@ -1,0 +1,30 @@
+.grid-1 {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 150px;
+
+  grid-auto-flow: column;
+
+  grid-auto-rows: 200px;
+  grid-auto-columns: 200px;
+}
+
+/*
+
+  display
+
+  grid-template-columns
+  grid-template-rows
+
+  row-gap
+  column-gap
+  (gap)
+
+  grid-auto-flow
+
+  grid-auto-rows
+  grid-auto-columns
+
+*/
